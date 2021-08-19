@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  max-width: 1920px;
+  background-color: white;
+}
+
+header {
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  background-color: #44446b;
+}
+
+
+
+
+header {
+    height: 25vh;
+    display: flex;
+  }
+
+  nav {
+    flex: 1;
+  }
+  nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+  }
+  nav li a {
+    color: beige;
+    font-size: 1.2rem;
+    text-decoration-line: none;
+    transition: all 0.5s ease;
+    font-weight: bolder;
+  }
+  nav a:hover {
+    color: black;
+    font-size: 1.3rem;
+  }
+
+
+.logo {
+  height: 20vh;
+  width: 35%;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border-radius: 1rem;
+  animation: animacionLogo 1s linear infinite alternate;
+}
+
+#logoContainer {
+  width: 30%;
+}
+
+@keyframes animacionLogo {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+
+/*   ------------------------------------------------------------------------------------------------ */
+
+
+@media only screen and (max-width: 700px) {
+  .navBar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #44446b;
+    color: white;
+  }
+  .brandTitle {
+    font-size: 1rem;
+    margin: 0.5rem;
+    height: 1.5rem;
+  }
+  #navbarLinks {
+    height: 100%;
+  }
+  #navbarLinks ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  #navbarLinks li {
+    list-style: none;
+    transition: background-color 4s ease;
+  }
+  #navbarLinks li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+  }
+  #navbarLinks li:hover {
+    background-color: #555;
+  }
+  .toggleButton {
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+  }
+  .toggleButton .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+  }
+  #navbarLinks:target {
+    display: flex;
+  }
+  .navBar {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .toggleButton {
+    display: flex;
+  }
+  #navbarLinks {
+    display: none;
+    width: 100%;
+  }
+  #navbarLinks ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  #navbarLinks ul li {
+    text-align: center;
+  }
+  #navbarLinks ul a {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+/*   ------------------------------------------------------------------------------------------------ */
+
+@media only screen and (max-width: 1099.9px) {
+  nav {
+    flex: 1;
+  }
+  nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+  }
+  nav li a {
+    color: beige;
+    font-size: 1.5rem;
+    text-decoration-line: none;
+  }
+  a:hover {
+    color: black;
+  }
+}
+
+
+/*   ------------------------------------------------------------------------------------------------ */
+
