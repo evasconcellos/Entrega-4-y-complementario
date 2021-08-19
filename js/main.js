@@ -40,7 +40,7 @@ function total() {
   document.write(
     `<h3>Felicidades, compraste un ${
       productos[articulos]
-    }. \n\nSu total es de: $${montoFinal()}.</h3> `
+    }. <br>Su total es de: $${montoFinal()}.</b></h3> `
   );
 }
 total();
