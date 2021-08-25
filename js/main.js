@@ -14,6 +14,24 @@ const productos = [
   new Productos(`Pack de 10 sahumerios`, 350, 80),
 ];
 
+// Mostrando los productos en consola ordenados de menor a mayor precio.
+productos.sort(function (a, b) {
+  if (a.precio > b.precio) {
+    return 1;
+  }
+  if (a.precio < b.precio) {
+    return -1;
+  }
+  
+  return 0;
+}
+);
+console.log(productos.sort ());
+//-------------------------------------
+
+
+
+
 const articulos = prompt(
   `Hola, selecciona el número del artículo que quieres comprar: \n\n1) ${productos[1].nombre}\n\n2) ${productos[2].nombre} \n\n3) ${productos[3].nombre} \n\n4) ${productos[4].nombre}`
 );
